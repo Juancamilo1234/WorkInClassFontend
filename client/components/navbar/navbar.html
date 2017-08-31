@@ -1,20 +1,80 @@
-<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
+                                                              <!--  Header  -->
+<header class="Header-container">
   <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">work-in-class-fontend</a>
-    </div>
-    <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active">
-            <a ui-sref="{{item.state}}">{{item.title}}</a>
-        </li>
-      </ul>
+    <div class="row Header-containerAlignV ">
+      <div class="col-xs-6"> <!-- col-xs-push-6 push corremos a la izquierda -->
+        <h1 class="Name-tittle">Eventos SAS</h1>
+      </div>
+      <div class="col-xs-6 text-right"> <!-- col-xs-pull-6 pull corremos a la derecha -->
+        <button class="navbar-toggle collapsed"  style="font-size 20px"data-toggle="collapse" data-target="#navMenu">&#9776;</button>
+        <a href="#" class="Login hidden-xs Login-link">Login</a>
+      </div>
     </div>
   </div>
-</div>
+</header>
+                                                            <!--  Header -->
+<div class="MenuContainer">
+  <nav class="navbar collapse navbar-collapse" id="navMenu" >
+    <div class="container ">
+      <div class="row Navbar-container">
+        <div class="col-xs-10  col-xs-offser-1 col-md-4 navbar-default Navbar">
+          <ul class="nav navbar-nav">
+            <li><a ng-click="vm.ocultarCollapse()"class="navbar-link" ui-sref-active="active" ui-sref="main">Home</a></li>
+            <li><a ng-click="vm.ocultarCollapse()"class="navbar-link" ui-sref-active="active" ui-sref="Catalogo">Catalogo</a></li>
+            <li><a ng-click="vm.ocultarCollapse()"class="navbar-link" ui-sref-active="active" ui-sref="main">Carrito</a></li>
+            <li><a ng-click="vm.ocultarCollapse()"class="navbar-link visible-xs" href="#">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-10 col-md-6 col-md-offset-2 input-group hidden-xs">
+          <form class="AlignItems-form ">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Encuentra tus productos">
+              <span class="input-group-btn">
+                <button class="btn Btn-adsi" type="button">
+                  Buscar
+                </button>
+
+              </span>
+
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </nav>
+  <div class="container hidden-sm hidden-md hidden-lg">
+
+    <div class="row">
+      <div class="col-xs-12 FormSearch">
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Encuentra tus productos">
+            <span class="input-group-btn">
+              <button type="button" name="button" class="btn Btn-adsi">
+                <span class="hidden-sm hidden-xs ">Buscar</span>
+                <i class="fa fa-search IconSearch visible-xs visible-sm"></i>
+              </button>
+            </span>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>                                                            <!--  Menu -->
+
+
+
+
+
+
+
+                                                            <!--  Menu -->

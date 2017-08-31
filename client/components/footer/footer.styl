@@ -1,5 +1,366 @@
-footer.footer
-  border-top 1px solid #E5E5E5
-  margin-top 70px
-  padding 30px 0
+.Footer
+  background-image url(../../../assets/images/footer.jpg)
+  margin-bottom 0em
+  width 100%
   text-align center
+  height auto
+  background-size 100% 150%
+  &-container
+    display flex
+    background rgba(15,13,12,0.8)
+    flex-direction column
+  &-containerTree
+    display flex
+    justify-content space-between
+    position relative
+    top 35px
+  &-logoContainer
+    display inline-block
+    width 36%
+    border-left solid 2px #fff
+    border-right solid 2px #fff
+
+  &-containerArrow
+    width 3.5%
+    display inline-block
+    height 44%
+    position relative
+    left 78%
+    font-size 100%
+
+  &-containerArrowIten
+    width 4.5%
+    height 45%
+    display inline-block
+    font-size 300%
+    position relative
+    left 73%
+
+  &-arrow
+    color black
+    position relative
+    top 76px
+    left 21px
+
+
+  &-data
+    text-align center
+    position relative
+    padding .5em
+    margin 0
+    display block
+    top 41%
+    color white
+
+
+  &-form
+    text-align left
+    position relative
+    left 64em
+    display inline-block
+    top 8em
+
+  &-information
+    color black
+    position relative
+    display inline-block
+    left 60em
+    text-align center
+    font-size 1.5em
+    bottom 3em
+    top -30px
+
+
+
+  &-social
+    display inline-block
+    font-size 300%
+    position relative
+    color black
+    padding-top .3em
+    left 44%
+    bottom 2%
+
+  &-twitter
+    color white
+    transition transform 0.9s ease
+    position relative
+
+  &-instagram
+    color white
+    transition transform 0.9s ease
+    position relative
+
+  &-facebook
+    color white
+    transition transform 0.9s ease
+    position relative
+
+  &-twitter:hover
+    transform:rotate(360deg)
+    color #4AB3F4
+  &-instagram:hover
+    transform:rotate(360deg)
+    color #bc2a8d
+
+  &-facebook:hover
+    transform:rotate(360deg)
+    color #3A5795
+
+  &-logo
+    position relative
+    display inline-block
+    height 9em
+    width 40%
+
+  &-dataContainer
+    background-color  #221f1f
+    position relative
+    bottom 24px
+    height 58px
+    top 3em
+
+  &-contactButtom
+    background-color #fff
+    position relative
+    display inline-block
+    left 31%
+    bottom 33px
+    padding 1em
+    border-radius 9px
+    padding-right 22px
+    padding-left 22px
+    border solid 2px #f25e25
+
+  &-menuRigth
+    display flex
+    width 24%
+    position relative
+    text-align center
+    flex-direction column
+    margin-left 8%
+
+
+  &-menuLeft
+    display flex
+    width 24%
+    position relative
+    text-align center
+    flex-direction column
+    margin-right 8%
+
+  &-menuItem
+    color white
+    text-decoration none
+
+  &-menuItem:hover
+    color #f15e25
+    text-decoration none
+
+  &-titleContainer1
+    width 100%
+    display inline-block
+    position relative
+    text-align center
+
+  &-titleContainer2
+    width 100%
+    display inline-block
+    position relative
+
+  &-contactButtom:hover
+    background-color #f15e25
+    transform scale(1.2)
+
+  &-menuTittle
+    color white
+
+@media screen and (max-width 2560px)
+  .Footer-social
+    display inline-block
+    font-size 300%
+    width 13%
+    margin-top 2%
+
+
+@media screen and (max-width 1440px)
+  .Footer-social
+    display flex
+    font-size 300%
+    margin-top 2%
+    width 30%
+    position relative
+    left 47.5%
+
+
+@media screen and (max-width 800px)
+  .Footer-social
+    display inline-block
+    font-size 300%
+
+
+  .Footer-containerArrowIten
+    width 4.5%
+    height 45%
+    display inline-block
+    font-size 300%
+    position relative
+    left 67%
+
+  .Footer-logoContainer
+    display inline-block
+    width 50%
+    border-bottom solid 2px white
+    position relative
+    left 25%
+    border-left solid 0px #fff
+    border-right solid 0px #fff
+
+  .Footer-menuRigth
+    display flex
+    width 50%
+    position relative
+    text-align center
+    flex-direction column
+    left 25%
+    border-bottom solid 2px white
+    padding-bottom 4%
+    margin-left 0
+
+  .Footer-menuLeft
+    margin-right 8%
+    display flex
+    width 50%
+    position relative
+    text-align center
+    flex-direction column
+    left 25%
+    margin-bottom 7%
+    margin-left 0
+
+  .Footer-containerTree
+    display flex
+    justify-content space-between
+    position relative
+    top 35px
+    flex-direction column
+
+
+@media screen and (max-width 660px)
+  .Footer-social
+    display inline-block
+    font-size 300%
+
+
+  .Footer-containerArrowIten
+    width 4.5%
+    height 45%
+    display inline-block
+    font-size 300%
+    position relative
+    left 62%
+
+
+
+@media screen and (max-width 550px)
+  .Footer-social
+    display inline-block
+    font-size 300%
+    position relative
+    color black
+    padding-top .3em
+    left 36%
+    bottom 2%
+
+  .Footer-containerArrowIten
+    width 4.5%
+    height 45%
+    display inline-block
+    font-size 300%
+    position relative
+    left 58%
+
+
+@media screen and (max-width 500px)
+  .Footer-social
+      display inline-block
+      font-size 300%
+      position relative
+      color black
+      padding-top .3em
+      left 23%
+      width 50%
+
+   .Footer-containerArrowIten
+      width 4.5%
+      height 37%
+      display inline-block
+      font-size 230%
+      position relative
+      left 51%
+  .Footer-logoContainer
+      display inline-block
+      width 90%
+      border-bottom solid 2px #fff
+      position relative
+      left 4%
+      border-left solid 0px #fff
+      border-right solid 0px #fff
+  .Footer-menuRigth
+    display flex
+    width 90%
+    position relative
+    text-align center
+    flex-direction column
+    left 4%
+    border-bottom solid 2px #fff
+    padding-bottom 4%
+    margin-left 0
+  .Footer-menuLeft
+    margin-right 8%
+    display flex
+    width 90%
+    position relative
+    text-align center
+    flex-direction column
+    left 4%
+    margin-bottom 7%
+    margin-left 0
+
+
+@media screen and (max-width 400px)
+  .Footer-social
+    display inline-block
+    font-size 300%
+    position relative
+    color black
+    padding-top .3em
+    left 23%
+
+
+  .Footer-containerArrowIten
+    width 4.5%
+    height 37%
+    display inline-block
+    font-size 230%
+    position relative
+    left 51%
+
+
+@media screen and (max-width 350px)
+  .Footer-containerArrowIten
+      width 4.5%
+      height 37%
+      display inline-block
+      font-size 214%
+      position relative
+      left 51%
+
+  .Footer-social
+      display inline-block
+      font-size 300%
+      position relative
+      color black
+      padding-top .3em
+      left 23%
+      bottom 2%
